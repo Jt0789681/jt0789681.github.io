@@ -1,0 +1,71 @@
+<!-- Jason Thill
+    Website Development
+    10/7/2021 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html">
+      <img src="logo.png" alt="Jason's Juice Bar Logo"  height=150 style="float:left;">
+      </a>
+      <h1>Jason's Juice Bar</h1>
+    </header>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Our Menu</a></li>
+      <li><a href="table.html">Events</a></li>
+      <li><a href="form.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h2>Get Ahold of Us!</h2>
+    <p>Got a question or a great idea for a smoothie? Want to join the team? You just want to tell us how your day is? Sounds good! Just fill out the info below and we look forward to hearing from you!</p>
+
+    <div class="contact">
+      <form action="thankyou.html" method="get">
+
+        <fieldset>
+          <legend>Contact Info</legend>
+
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" required>
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName">
+
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email" required><br><br>
+
+
+          <label for="content">What Do You Want To Tell Us?</label><br>
+          <textarea id="content" name="content" rows="6" cols="40" required></textarea><br><br>
+
+          <input type="submit">
+
+
+
+
+        </fieldset>
+
+      </form>
+    </div>
+
+  </article>
+  <footer>
+    <p>&copy; Jason Thill 2021 jt0789681@otc.edu I do not own these pictures!</p>
+  </footer>
+
+</body>
+</html>

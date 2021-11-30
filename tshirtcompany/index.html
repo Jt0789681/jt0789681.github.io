@@ -1,0 +1,85 @@
+<!-- Jason Thill
+11/9/2021
+Website Development -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>PixelBee Tee's Orders</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c7ab0c4657.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="items.html">Shirts</a></li>
+        <li><a href="index.html">Order Online</a></li>
+        <li><a href="#">Our Location</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <div class="form">
+        <h1>Enter Your Selection</h1>
+        <h3>Please fill in the form below and your order will be processed within 24 hours.</h3>
+
+        <form method="get">
+          <input type="text" name="name" required placeholder="Name" />
+          <br>
+          <input type="tel" name="phone" required placeholder="Phone Number" />
+          <div class="dropdowns">
+            <select id="shirts" name="shirts">
+              <option value="festivus">Festivus</option>
+              <option value="imBob">I'm Bob</option>
+              <option value="Newman">Newman</option>
+              <option value="nosoup">No Soup</option>
+              <option value="seinfeldlogo">Seinfeld Logo</option>
+              <option value="vandelay">Vandelay Ind.</option>
+            </select>
+            <select id="amount" name="amount">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <input type="submit" value="Place Order" />
+        </form>
+      </div>
+
+      <div class="info">
+        <div class="review">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>"The t-shirt was perfect! It arrived quickly and was great qual-i-tee!""</h3>
+          <p>Betty Boop<br>
+          7/5/2021
+        </div>
+
+        <div class="contact">
+          <h2>Connect With Us</h2>
+          <p>For support or any questions:<br>Email us at <a href="#">Support@pixelbeestees.com</a><p>
+        </div>
+
+
+        <div class="social">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-youtube-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-snapchat-square"></i>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>&copy; Jason Thill 2021<p>
+    </footer>
+  </body>
+</html>

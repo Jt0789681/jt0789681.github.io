@@ -1,0 +1,116 @@
+/* Jason Thill
+11/9/2021
+Website Development */
+
+nav ul {
+  padding: 0;
+  background: #3a3235;
+  display:flex;
+  list-style:none;
+  justify-content: flex-start;
+}
+
+nav a {
+  display:block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  background: #5d5155;
+}
+
+footer {
+  color: white;
+  background: #3a3235;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Order Online CSS */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.form {
+  margin: 1.2em;
+}
+
+.form h1, .form h3 {
+  text-align: center;
+}
+input, select {
+  align-content: center;
+  justify-content: center;
+  width: 90%;
+  line-height: 2em;
+  margin: 1.2em 1.2em 0 0;
+}
+
+select {
+  font-size: 1em;
+}
+.dropdowns {
+  display: flex;
+  justify-content: space-around;
+}
+
+.review {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 80%;
+  padding: 20px;
+}
+
+.review p {
+  font-style:italic;
+}
+.fa {
+  color: #ffd700
+}
+
+.fab {
+  padding: 2px;
+  font-size: 2em;
+}
+
+/* Shirts CSS */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.prod1, .prod2, .prod3, .prod4, .prod5, .prod6 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.products img {
+  width: 20rem;
+}
+
+@media screen and (max-width: 568px) {
+  nav ul {
+    justify-content: center;
+    /* align-items: center; */
+    /* I commented this out because the hover would only change the background right behind each link, not spread to the edges of the container, and I did not figure out the fix in time. */
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
